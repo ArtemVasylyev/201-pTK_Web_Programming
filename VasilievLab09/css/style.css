@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+/* Окремий фон для кожної сторінки */
+body.page-index {
+  background-image: url("../Image/bg_index.jpg");
+}
+
+body.page-poltava {
+  background-image: url("../Image/bg_poltava.jpg");
+}
+
+body.page-register {
+  background-image: url("../Image/bg_register.jpg");
+}
+
+/* Обов'язкові стилі з методички */
+header {
+  margin-right: 5%;
+  margin-left: 5%;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+main {
+  margin: 2%;
+  margin-right: 5%;
+  margin-left: 5%;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 150px;
+  background: rgba(0, 0, 0, 0.3); /* Напівпрозорий фон */
+  padding: 1rem;
+}
+
+footer {
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  overflow: visible;
+  padding: 1rem;
+  min-height: 120px;
+}
+
+.forms {
+  float: right;
+}
+
+/* Додаткові стилі для section та article */
+section {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+article {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-top: 10px;
+}
+
+section h1, section h2 {
+  color: #38bdf8;
+  margin-top: 0;
+}
+
+article p {
+  line-height: 1.6;
+  text-align: justify;
+  color: #f1f5f9;
+}
+
+a {
+  color: #7dd3fc;
+}
+/* Навігаційне меню з випадаючим списком (ЛР № 9) */
+.top-menu ul {
+  border: 1px solid #38bdf8;
+  display: table-cell;
+  background-color: #1e293b;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  position: relative;
+}
+
+.top-menu .p {
+  display: table-cell;
+}
+
+.top-menu ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.top-menu ul:hover {
+  background-color: #0284c7;
+}
+
+.top-menu .pp {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f5f9;
+  min-width: 180px;
+  z-index: 10;
+}
+
+.top-menu .pp li {
+  padding: 10px 14px;
+  display: block;
+}
+
+.top-menu .pp li a {
+  color: #0f172a;
+}
+
+.top-menu .pp li:hover {
+  background-color: #cbd5e1;
+}
+
+.top-menu ul:hover .pp {
+  display: block;
+}
+
+/* Псевдокласи для гіперпосилань у нижній частині сайту */
+footer a:link {
+  color: #38bdf8;
+}
+
+footer a:visited {
+  color: #a78bfa;
+}
+
+footer a:hover {
+  color: #facc15;
+  text-decoration: underline;
+}
+
+footer a:active {
+  color: #ef4444;
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head><meta charset="utf-8"><title>ЛР10 — Приклад 3</title></head>
+<body>
+  <p>Введіть ваше ім'я:
+    <input id="myName" name="myName" type="text">
+    <input type="button" value="OK" onclick="
+      var name = document.getElementById('myName').value;
+      var s = '<html><body bgcolor=#e0f2fe text=#0c4a6e><h3 align=center>Добрий день, ' + name + '!</h3></body></html>';
+      document.write(s);
+    ">
+  </p>
+</body>
+</html>

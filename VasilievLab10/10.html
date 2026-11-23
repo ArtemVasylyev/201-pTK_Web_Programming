@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>ЛР10 — Приклад 10</title>
+  <script>
+    var al = 0;
+    function podmen() {
+      var img = document.images[0];
+      if (al === 0) {
+        img.src = "pic2.jpg";
+        al = 1;
+      } else {
+        img.src = "pic1.jpg";
+        al = 0;
+      }
+      setTimeout(podmen, 600);
+    }
+  </script>
+</head>
+<body background="bg.jpg" onload="setTimeout(podmen, 600);">
+  <center>
+    <h1><font color="#1d4ed8">Зміна зображення через задані проміжки часу</font></h1>
+    <img src="pic1.jpg" width="200" height="160" border="1" alt="Анімація">
+  </center>
+</body>
+</html>
